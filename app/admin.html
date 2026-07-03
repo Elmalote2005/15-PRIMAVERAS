@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Administrativo - 15 PRIMAVERAS</title>
+    <meta name="author" content="Santiago Avendaño Zapata">
+    <meta name="description" content="Gestión de clientes, eventos y servicios.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-black shadow-sm fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="../index.html">
+            <i class="bi bi-crown me-2 fs-4 text-success"></i>
+            <span>15 PRIMAVERAS</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" 
+                aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link fw-medium px-3" href="../index.html">
+                        <i class="bi bi-house-door me-1"></i> Inicio
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-medium px-3" href="../assets/banquets.html">Banquetes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-medium px-3" href="../assets/living_rooms.html">Salones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-medium px-3" href="../assets/clothes.html">Vestidos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-medium px-3" href="#" role="button" data-bs-toggle="dropdown">
+                        <i class="bi bi-layout-text-sidebar me-1"></i> Paneles
+                    </a>
+                    <ul class="dropdown-menu bg-dark border-0">
+                        <li><a class="dropdown-item text-light" href="admin.html"><i class="bi bi-shield-lock me-2"></i>Panel Admin</a></li>
+                        <li><a class="dropdown-item text-light" href="client.html"><i class="bi bi-person me-2"></i>Panel Cliente</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-medium px-3" href="login.html">Ingresar</a>
+                </li>
+                <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                    <a class="btn btn-success w-100 w-lg-auto" href="register.html">Registrarse</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid pt-5 mt-4">
+    <div class="row">
+        <!-- Barra lateral izquierda -->
+        <nav class="col-md-3 col-lg-2 d-md-block bg-dark text-white p-4 min-vh-100">
+            <h5 class="text-success mb-4">Menú de Gestión</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                    <a class="nav-link text-white active bg-success rounded" href="#">
+                        <i class="bi bi-speedometer2 me-2"></i>Resumen
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link text-white" href="#">
+                        <i class="bi bi-people me-2"></i>Clientes
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link text-white" href="#">
+                        <i class="bi bi-calendar-event me-2"></i>Eventos
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link text-white" href="#">
+                        <i class="bi bi-box-seam me-2"></i>Paquetes
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Contenido principal -->
+        <main class="col-md-9 col-lg-10 p-4">
+            <h2 class="mb-4 fw-bold">Panel de Administración</h2>
+
+            <!-- Tarjetas de resumen -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow-sm border-0 rounded-3 h-100">
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="text-muted">Total Clientes</h6>
+                                <h3 class="fw-bold">128</h3>
+                            </div>
+                            <span class="badge bg-success fs-6">+12%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow-sm border-0 rounded-3 h-100">
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="text-muted">Eventos Programados</h6>
+                                <h3 class="fw-bold">35</h3>
+                            </div>
+                            <span class="badge bg-primary fs-6">Activos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow-sm border-0 rounded-3 h-100">
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="text-muted">Ingresos Mensuales</h6>
+                                <h3 class="fw-bold">$4.850.000</h3>
+                            </div>
+                            <span class="badge bg-info fs-6">COP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow-sm border-0 rounded-3 h-100">
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="text-muted">Vestidos Disponibles</h6>
+                                <h3 class="fw-bold">42</h3>
+                            </div>
+                            <span class="badge bg-warning text-dark fs-6">Stock</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabla de clientes -->
+            <h4 class="mb-3">Listado de Clientes</h4>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover align-middle shadow-sm">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre Completo</th>
+                            <th>Correo</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>María López</td>
+                            <td>maria@ejemplo.com</td>
+                            <td><span class="badge bg-success">Activo</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-primary me-1" data-bs-toggle="modal" data-bs-target="#modalEditar">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-danger">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Camila Restrepo</td>
+                            <td>camila@ejemplo.com</td>
+                            <td><span class="badge bg-warning text-dark">Pendiente</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-primary me-1" data-bs-toggle="modal" data-bs-target="#modalEditar">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-danger">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
+
+<!-- Modal de edición -->
+<div class="modal fade" id="modalEditar" tabindex="-1" aria-labelledby="tituloModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title" id="tituloModal">Editar Datos del Cliente</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" value="María López" id="editNombre">
+                    <label for="editNombre">Nombre completo</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" value="maria@ejemplo.com" id="editCorreo">
+                    <label for="editCorreo">Correo electrónico</label>
+                </div>
+                <div class="form-floating">
+                    <select class="form-select" id="editEstado">
+                        <option selected>Activo</option>
+                        <option>Pendiente</option>
+                        <option>Inactivo</option>
+                    </select>
+                    <label for="editEstado">Estado de cuenta</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-success">Guardar cambios</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
